@@ -14,7 +14,7 @@ int main(){
     
     // Khai báo con trỏ trỏ đến biến x (nhiều cách)
     int *p = &x; // Cách vừa khai báo vừa gán (thông dụng nhất)
-    /*
+    /* Thành phần của con trỏ: 
       Giá trị của con trỏ = Địa chỉ của biến
       Giá trị tại địa chỉ của con trỏ = Giá trị của biến
     */
