@@ -1,4 +1,4 @@
-// Tạo một array 1D theo cách đơn giản và thông dụng (mảng tĩnh)
+// Tạo một array 1D theo cách đơn giản và thông dụng (mảng động)
 #include<stdio.h>
 void Nhapmang(int n, int a[]){
     for(int i = 0; i < n; i++){
