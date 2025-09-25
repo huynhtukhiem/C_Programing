@@ -22,3 +22,4 @@ Như vậy struct về vơ bản cũng chỉ là một loại kiểu dữ liệu
 
 # Cách dùng struct
 
+
