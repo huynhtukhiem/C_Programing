@@ -15,9 +15,10 @@ struct Sinh_vien{
   float score; // Điểm
 };
 ```
-Lúc này ta có thể hiểu như sau: `struct Sinh_vien{int age, char gender, string name, float score};` `struct Sinh_vien{19, 'M', "Huynh Tu Khiem", 4.00};`
+Lúc này ta có thể hiểu như sau: `struct Sinh_vien{int age, char gender, string name, float score};` `struct Sinh_vien{19, 'M', "Huynh Tu Khiem", 4.00};` Lúc này Sinh_vien chính là một kiểu dữ liệu giống như int hay char,.....
 
 Như vậy struct về vơ bản cũng chỉ là một loại kiểu dữ liệu do ta định nghĩa và struct có thể tập hợp các kiểu dữ liệu khác thành một đơn vị logic
+
 
 # Cách dùng struct
 
