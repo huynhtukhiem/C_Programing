@@ -16,6 +16,15 @@ Node* Tao_node(int value){
     Node_moi->next = NULL; // ban đầu node mới chưa nối với node nào nên sẽ gán với null
     return Node_moi; // Trả về con trỏ trỏ đến node vừa tạo, để bên ngoài có thể sử dụng và nối vào danh sách.
 }
+
+void FreeList(Node* head){
+    Node* temp;
+    while(head != NULL){
+        temp = head; // Lưu node hiện tại
+        head = head->next; // Chuyển đến node tiếp
+        free(temp); // giải phóng node hiện tại
+    }
+}
 int main(){
     Node* head = Tao_node(10); // gán giá trị cho node đầu tiên (head) là 10
     head->next = Tao_node(20); // gán giá trị cho node kế node đầu là 20
