@@ -1,0 +1,32 @@
+#include<stdio.h>
+void swap(int a, int b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
+void swap1(int *a, int *b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main(){
+    int a = 10;
+    int b = 20;
+    printf("Gia tri ban dau cua a: %d\n", a);
+    printf("Gia tri ban dau cua b: %d\n", b);
+    
+    printf("Hoan doi khong dung con tro: \n"); // Không dùng con trỏ để hoán đổi
+    swap(a,b);
+    printf("Gia tri luc sau cua a: %d\n", a);
+    printf("Gia tri luc sau cua b: %d\n", b);
+    
+    printf("Hoan doi su dung con tro: \n"); // Dùng con trỏ để hoán đổi
+    swap1(&a, &b);
+    printf("Gia tri luc sau cua a: %d\n", a);
+    printf("Gia tri luc sau cua b: %d\n", b);
+
+
+
+    return 0;
+}
