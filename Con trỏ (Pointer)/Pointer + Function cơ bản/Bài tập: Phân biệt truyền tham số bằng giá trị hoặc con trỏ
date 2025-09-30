@@ -58,7 +58,36 @@ int main(){
     printf("Gia tri luc sau cua a: %d\n", a);
     printf("Gia tri luc sau cua b: %d\n", b);
 
+    return 0;
+}
 
+// Bài 3: Tính toán 2 biến
+#include<stdio.h>
+int Thay_doi(int m, int n){
+    int sum;
+    m += 5;
+    n += 10;
+    sum = m + n;
+    return sum;
+}
+int Thay_doi1(int *m, int *n){
+    int sum;
+    *m += 5;
+    *n += 10;
+    sum = *m + *n;
+    return sum;
+}
+int main(){
+    int a = 10;
+    int b = 5;
+    int sum = a + b;
+    printf("Gia tri a va b ban dau la: %d %d\n",a ,b);
+
+    printf("Tong a va b: %d\n", Thay_doi(a,b)); // Kết quả là 30 (bản sao của a và b), giá trị a và b gốc không thay đổi
+    printf("Gia tri a va b la: %d %d\n", a,b); // Không thay đổi a và b
+
+    printf("Tong a va b: %d\n", Thay_doi1(&a,&b)); // Kết quả in ra là 30, giá trị a và b gốc có thay đổi
+    printf("Gia tri a va b la: %d %d\n", a,b); // Có thay đổi a và b
 
     return 0;
 }
