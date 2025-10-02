@@ -1,1 +1,15 @@
-
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Nhap kich thuoc mang: ");
+    scanf("%d", &n);
+    int a[n]; // mảng biến thiên VLA
+    int *p = a; // Con trỏ p trỏ đến phần tử đầu tiên của a
+    for(int i = 0;  i < n; i++){
+        printf("Nhap phan tu thu %d: ", i+1);
+        scanf("%d", &*(p+i));
+    }
+    for(int i = 0; i < n; i++){
+        printf("%d ", *(p+i));
+    }
+}
