@@ -16,4 +16,4 @@ fclose(f);
 ```
 Các mode:
 
-"r": đọc tất cả dữ liệu trong file
+"r": đọc dữ liệu trong file (kết hợp với các hàm khác để đọc theo mong muốn)
